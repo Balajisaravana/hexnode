@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme{
+  /* Font Family */
+  --font-family-mulish: "Mulish", sans-serif;
+
+  /* colors */
+  --color-*: initial;
+  --color-blue: #020A19;
+  --color-white: #FFFFFF;
+  --color-input-gray: #C6C6C6;
+  --color-red: #DD0735;
+  --color-hover-red: #bb022a;
+  --color-green: #60C458;
+  --color-text-gray: #333333;
+  --color-white-tab: #F7F7F7;
+  --color-black: #050607;
+  --color-black-400: #1A1C2B;
+  --color-footer-white: #F2F2F2;
+  --color-footer-gray: #556575;
+/* 
+  --animate-scrollLeft: scrollLeft 30s linear infinite; */
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-25%)
+    }
+    50% {
+      transform: translateX(-50%)
+    }
+    75% {
+      transform: translateX(-75%)
+    }
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+}
+
+body {
+  font-family: var(--font-family-mulish);
+}
+
+h1{
+  @apply text-white text-[34px] leading-[44px] text-center lg:text-[42px] lg:leading-[53px] xl:text-left font-bold antialiased
+}
+
+h2{
+  @apply antialiased text-[32px] md:text-[40px] leading-[40px] md:leading-[1.3] text-center font-bold text-blue
+}
+
+blockquote{
+  @apply text-base sm:text-xl md:text-2xl leading-6 sm:leading-[32px] text-blue font-bold text-center md:text-left antialiased
+}
+
+h6{
+  @apply text-center md:text-left w-full mx-auto text-[14px] leading-[11px] sm:text-[20px] sm:leading-[33px] pb-[5px] sm:pb-0 text-blue font-bold
+}
+
+@utility testimonial-para {
+  @apply text-center md:text-left text-xs leading-[16px] sm:text-sm sm:leading-[18px] text-blue/70 font-normal
+}
+
+@utility container{
+  width: 88%;
+}
+
+@utility rounded-field{
+  border-radius: 3px;
+}
+
+@utility action-btn{
+  @apply bg-red hover:bg-hover-red text-white rounded-field py-[10px] px-[26px] transition uppercase cursor-pointer
+}
+
+
+@utility button-link {
+  @apply text-[17px] leading-[24px] text-red font-medium inline-block pr-[20px] pb-[0px] pl-[5px]
+}
+
+@utility arrow {
+  @apply ml-1 inline-block transition-transform duration-300 ease-in-out
+}
+
+
+

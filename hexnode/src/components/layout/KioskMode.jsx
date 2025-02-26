@@ -71,7 +71,7 @@ const KioskMode = () => {
           What additional possibilities does the <br /> Kiosk mode offer?
         </h2>
         <div className="md:mt-10 grid gap-5 grid-cols-12">
-          {/* Left Image Section */}
+
           <div className="group col-span-12 lg:col-span-5 p-4 relative" role="tabpanel" aria-labelledby={`feature-${kioskModeData[currentIndex - 1]?.id}`}>
             {kioskModeData[currentIndex - 1] && (
               <div className="rounded-lg overflow-hidden transition-all duration-500 ease-out transform scale-95 group-hover:scale-100">
@@ -90,7 +90,7 @@ const KioskMode = () => {
             )}
           </div>
 
-          {/* Right Text Section */}
+
           <div className="col-span-12 lg:col-span-7">
             {kioskModeData.map((data) => (
               <React.Fragment key={data.id}>
